@@ -1,0 +1,58 @@
+.parallax {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 4px 0;
+}
+
+.scroller {
+  display: flex;
+  white-space: nowrap;
+  text-align: center;
+  font-family: var(--font-tech), monospace;
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.scroller span {
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .scroller {
+    font-size: 2.2rem;
+  }
+}
+
+/* Custom speed text lane colors */
+.velocity-cyan {
+  color: var(--accent-cyan);
+  text-shadow: 0 0 10px rgba(0, 242, 254, 0.4);
+}
+
+.velocity-magenta {
+  color: var(--accent-magenta);
+  text-shadow: 0 0 10px rgba(216, 86, 191, 0.4);
+}
+
+/* Description scrolling styles */
+.scroller span.velocity-desc {
+  font-family: var(--font-sans), sans-serif;
+  font-size: 1.05rem !important;
+  font-weight: 400 !important;
+  color: var(--text-secondary);
+  line-height: 1.6 !important;
+  letter-spacing: 0.2px;
+  text-transform: none;
+  text-shadow: none;
+  padding: 0 16px;
+}
+
+@media (max-width: 768px) {
+  .scroller span.velocity-desc {
+    font-size: 0.95rem !important;
+  }
+}
